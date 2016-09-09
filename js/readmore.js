@@ -4,7 +4,6 @@ function start() {
   $(".readmore").click(readMore);
   $(".readless").click(readLess);
   $(".learnmore").click(learnMore);
-
 }
 
 function readMore(){
