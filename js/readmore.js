@@ -3,7 +3,10 @@ $(document).ready(start);
 function start() {
   $(".readmore").click(readMore);
   $(".readless").click(readLess);
+  $(".learnmore").click(learnMore);
+
 }
+
 
 function readMore(){
   event.preventDefault();
@@ -18,3 +21,9 @@ function readLess(){
   $("#show-this-on-click").hide("slow");
   $(".readless").css("display", "none");
 }
+
+function learnMore(){
+  event.preventDefault();
+  $(".learnmore").css("display", "none");
+  $("#learnmoretext").show("slow");
+ }
