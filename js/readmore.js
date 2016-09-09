@@ -7,14 +7,14 @@ function start() {
 
 function readMore(){
   event.preventDefault();
-  $(".readmore").css('display', 'none');
-  $("#show-this-on-click").css('display', 'block');
-  $(".readless").css('display', 'block');
+  $(".readmore").css("display", "none");
+  $("#show-this-on-click").show("slow");
+  $(".readless").css("display", "block");
  }
 
 function readLess(){
   event.preventDefault();
-  $(".readmore").css('display', 'block');
-  $("#show-this-on-click").css('display', 'none');
-  $(".readless").css('display', 'none');
+  $(".readmore").css("display", "block");
+  $("#show-this-on-click").hide("slow");
+  $(".readless").css("display", "none");
 }
